@@ -15,5 +15,5 @@ jobs:
         username: u24648826
         password: Ilovehockey!27
         protocol: ftp
-        server-dir: /
+        server-dir: /COS221/GithubActions/
         debug: true
