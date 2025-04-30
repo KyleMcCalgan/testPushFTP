@@ -15,4 +15,5 @@ jobs:
         username: u24648826
         password: ${{ secrets.ftp_password }}
         protocol: ftp
-        server-dir: /COS221/GithubActions/
+        server-dir: /
+        debug: true
