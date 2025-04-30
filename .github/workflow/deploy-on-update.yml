@@ -1,0 +1,24 @@
+name: FTP Deploy on Update
+
+on:
+  push:
+    branches:
+      - main  # or any branch you want to watch
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        protocol: ftp  # change to 'sftp' if needed
+        server-dir: /COS221/GithubActions/
+
