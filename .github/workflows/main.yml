@@ -13,7 +13,7 @@ jobs:
       with:
         server: wheatley.cs.up.ac.za
         username: u24648826
-        password: ${{ secrets.ftp_password }}
+        password: Ilovehockey!27
         protocol: ftp
         server-dir: /
         debug: true
