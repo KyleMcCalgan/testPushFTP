@@ -1,1 +1,1 @@
-this is the mardown folder '''testing'''
+updated the gitignore to ignore test2.md
