@@ -12,8 +12,8 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: wheatley.cs.up.ac.za
-        username: u24648826
-        password: Ilovehockey!27
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftp
         server-dir: /COS221/GithubActions/
         debug: true
