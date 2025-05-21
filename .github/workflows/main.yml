@@ -16,4 +16,5 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftp
         server-dir: /COS221/GithubActions/
+        local-dir: ./TEST/
         debug: true
