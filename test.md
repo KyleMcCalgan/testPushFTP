@@ -1,1 +1,0 @@
-updated the gitignore to ignore test2.md
