@@ -1,1 +1,1 @@
-this is another file in the second folder
+Updated test2 textfile
