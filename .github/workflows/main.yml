@@ -11,13 +11,24 @@ jobs:
     - name: Get latest code
       uses: actions/checkout@v4
     
-    - name: Sync files
+    - name: Sync BACKEND files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: wheatley.cs.up.ac.za
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftp
-        server-dir: /COS221/GithubActions/
+        server-dir: /COS221/TEST/
         local-dir: ./TEST/
+        debug: true
+    
+    - name: Sync FRONTEND files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: wheatley.cs.up.ac.za
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        protocol: ftp
+        server-dir: /COS221/TEST2/
+        local-dir: ./TEST2/
         debug: true
